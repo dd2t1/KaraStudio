@@ -1,0 +1,48 @@
+{
+  "title": "Karaoke",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up Karaoke",
+        "description": "Choose where songs are stored and optionally the application URL for playing and editing. Discovered applications are offered in the list.",
+        "data": {
+          "app_url": "Application URL",
+          "media_directory": "Media directory",
+          "project_subdirectory": "Project location",
+          "spotify_account": "Spotify account already connected to Home Assistant"
+        },
+        "data_description": {
+          "app_url": "Optional for saved songs. Enter a URL or select a discovered application.",
+          "media_directory": "Home Assistant media directory. Existing files are not moved.",
+          "project_subdirectory": "Choose the root if the media directory already points to the karaoke folder."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Enter a reachable HTTP(S) URL without credentials or localhost.",
+      "invalid_directory": "Select an available media directory."
+    },
+    "abort": {
+      "already_configured": "Karaoke is already configured. Use its settings to change it.",
+      "invalid_import": "Legacy settings are invalid. Add the integration from this page."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Karaoke settings",
+        "description": "Changes apply immediately. Changing the directory does not move existing songs.",
+        "data": {
+          "app_url": "Application URL",
+          "media_directory": "Media directory",
+          "project_subdirectory": "Project location",
+          "spotify_account": "Spotify account already connected to Home Assistant"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Enter a reachable HTTP(S) URL without credentials or localhost.",
+      "invalid_directory": "Select an available media directory."
+    }
+  }
+}

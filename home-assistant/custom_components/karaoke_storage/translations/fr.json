@@ -1,0 +1,48 @@
+{
+  "title": "Karaoké",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurer Karaoké",
+        "description": "Choisissez le stockage des musiques et, si nécessaire, l’adresse de l’application pour jouer ou éditer. Les adresses détectées sur le réseau sont proposées dans la liste.",
+        "data": {
+          "app_url": "Adresse de l’application",
+          "media_directory": "Dossier média",
+          "project_subdirectory": "Emplacement des projets",
+          "spotify_account": "Compte Spotify déjà connecté à Home Assistant"
+        },
+        "data_description": {
+          "app_url": "Facultatif pour les morceaux sauvegardés. Vous pouvez saisir une adresse ou sélectionner une application détectée.",
+          "media_directory": "Dossier média Home Assistant contenant les musiques. Les fichiers existants ne sont pas déplacés.",
+          "project_subdirectory": "Choisissez la racine si le dossier média pointe déjà vers votre dossier karaoke."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Indiquez une URL HTTP(S) accessible sur le réseau, sans identifiants ni localhost.",
+      "invalid_directory": "Sélectionnez un dossier média disponible."
+    },
+    "abort": {
+      "already_configured": "Karaoké est déjà configuré. Utilisez ses paramètres pour le modifier.",
+      "invalid_import": "Les anciens réglages ne sont pas valides. Ajoutez l’intégration depuis cette page."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Paramètres de Karaoké",
+        "description": "Ces réglages s’appliquent immédiatement. Changer le dossier ne déplace pas les musiques déjà enregistrées.",
+        "data": {
+          "app_url": "Adresse de l’application",
+          "media_directory": "Dossier média",
+          "project_subdirectory": "Emplacement des projets",
+          "spotify_account": "Compte Spotify déjà connecté à Home Assistant"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Indiquez une URL HTTP(S) accessible sur le réseau, sans identifiants ni localhost.",
+      "invalid_directory": "Sélectionnez un dossier média disponible."
+    }
+  }
+}

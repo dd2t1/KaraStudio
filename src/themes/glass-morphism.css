@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg-primary: #f5f7fa;
+  --bg-secondary: #e2e8f0;
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --accent-blue: #4cc9f0;
+  --accent-purple: #7209b7;
+  --glass-bg: rgba(245, 247, 250, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

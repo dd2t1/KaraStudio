@@ -1,0 +1,27 @@
+:root {
+  --bg-primary: #0a0a1a;
+  --bg-secondary: #1a1a3a;
+  --text-primary: #f8f9fa;
+  --text-accent: #4cc9f0;
+  --neon-pink: #f72585;
+  --neon-blue: #4361ee;
+  --glass-bg: rgba(10, 10, 26, 0.6);
+  --glass-border: rgba(76, 201, 240, 0.3);
+}
+
+body {
+  background: radial-gradient(circle at center, var(--bg-primary), var(--bg-secondary));
+  color: var(--text-primary);
+}
+
+.neon-btn {
+  background: var(--neon-blue);
+  box-shadow: 0 0 10px var(--neon-blue);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-effect {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+}

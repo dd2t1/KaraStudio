@@ -1,0 +1,131 @@
+/* Thèmes cohérents avec l'interface existante.
+   Chaque variante conserve le contraste sombre du studio et ne change que la palette. */
+:root,
+:root[data-theme='neon-futuriste'] {
+  --bg-color: #010b13;
+  --primary: #f72585;
+  --primary-hover: #ff4992;
+  --primary-text: #ffffff;
+  --secondary: #4cc9f0;
+  --secondary-rgb: 76, 201, 240;
+  --tertiary: #9b5de5;
+  --text: #f7fbff;
+  --muted-text: #b9c7d8;
+  --surface: rgba(8, 24, 42, .82);
+  --surface-strong: #081625;
+  --control-bg: rgba(5, 16, 29, .9);
+  --glass-bg: rgba(10, 25, 41, .76);
+  --glass-border: rgba(76, 201, 240, .25);
+  --theme-background: radial-gradient(circle at 50% 0%, #142a4d 0%, #010b13 62%);
+  --theme-glow: rgba(247, 37, 133, .16);
+  --theme-font: 'Outfit', 'Inter', system-ui, sans-serif;
+}
+
+:root[data-theme='glass-morphism'] {
+  --bg-color: #09131f;
+  --primary: #758cff;
+  --primary-hover: #91a3ff;
+  --primary-text: #ffffff;
+  --secondary: #7de3ef;
+  --secondary-rgb: 125, 227, 239;
+  --tertiary: #c6a6ff;
+  --text: #f5f8ff;
+  --muted-text: #bdc8d9;
+  --surface: rgba(23, 38, 61, .68);
+  --surface-strong: #13253d;
+  --control-bg: rgba(17, 32, 52, .92);
+  --glass-bg: rgba(36, 57, 86, .57);
+  --glass-border: rgba(202, 226, 255, .32);
+  --theme-background: radial-gradient(circle at 12% 5%, #40597f 0%, #17263c 35%, #09131f 78%);
+  --theme-glow: rgba(151, 197, 255, .18);
+  --theme-font: 'Outfit', 'Inter', system-ui, sans-serif;
+}
+
+:root[data-theme='retro'] {
+  --bg-color: #130620;
+  --primary: #ff4db8;
+  --primary-hover: #ff75cb;
+  --primary-text: #21001a;
+  --secondary: #53f4ff;
+  --secondary-rgb: 83, 244, 255;
+  --tertiary: #ffd95a;
+  --text: #fff9ff;
+  --muted-text: #e1c9ed;
+  --surface: rgba(42, 8, 64, .78);
+  --surface-strong: #26083b;
+  --control-bg: rgba(34, 5, 53, .94);
+  --glass-bg: rgba(47, 10, 72, .73);
+  --glass-border: rgba(83, 244, 255, .34);
+  --theme-background: radial-gradient(circle at 50% -20%, #7a146d 0%, #2c0945 37%, #130620 78%);
+  --theme-glow: rgba(255, 77, 184, .2);
+  --theme-font: 'Outfit', 'Inter', system-ui, sans-serif;
+}
+
+:root[data-theme='dark-academia'] {
+  --bg-color: #19120e;
+  --primary: #bd7b4a;
+  --primary-hover: #d99863;
+  --primary-text: #1b1009;
+  --secondary: #e3c17b;
+  --secondary-rgb: 227, 193, 123;
+  --tertiary: #b4564d;
+  --text: #f8ecd4;
+  --muted-text: #d8c4a1;
+  --surface: rgba(51, 34, 23, .8);
+  --surface-strong: #2b1c12;
+  --control-bg: rgba(40, 26, 17, .95);
+  --glass-bg: rgba(49, 31, 20, .78);
+  --glass-border: rgba(227, 193, 123, .3);
+  --theme-background: radial-gradient(circle at 20% 0%, #5c3d26 0%, #2b1c12 40%, #19120e 80%);
+  --theme-glow: rgba(189, 123, 74, .15);
+  --theme-font: 'Outfit', 'Inter', system-ui, sans-serif;
+}
+
+:root[data-theme='nature'] {
+  --bg-color: #08241c;
+  --primary: #b8d961;
+  --primary-hover: #d0ed7b;
+  --primary-text: #102a16;
+  --secondary: #76dbc8;
+  --secondary-rgb: 118, 219, 200;
+  --tertiary: #75b878;
+  --text: #f0fff1;
+  --muted-text: #c6e3cc;
+  --surface: rgba(12, 57, 42, .79);
+  --surface-strong: #0b392a;
+  --control-bg: rgba(8, 43, 32, .95);
+  --glass-bg: rgba(13, 59, 44, .76);
+  --glass-border: rgba(184, 217, 97, .29);
+  --theme-background: radial-gradient(circle at 85% 0%, #2e7753 0%, #103c2d 40%, #08241c 80%);
+  --theme-glow: rgba(184, 217, 97, .14);
+  --theme-font: 'Outfit', 'Inter', system-ui, sans-serif;
+}
+
+html, body, #root { min-height: 100%; }
+body {
+  background: var(--theme-background);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--theme-font);
+  transition: background .2s ease, color .2s ease;
+}
+
+/* Composants historiques de l'application, normalisés pour toutes les palettes. */
+.main-menu-container { background: var(--theme-background); }
+.bg-glow { background: radial-gradient(circle, var(--theme-glow) 0%, transparent 70%); }
+.scanlines { opacity: .45; }
+.glass-panel { background: var(--glass-bg); border-color: var(--glass-border); }
+.primary-btn { background-color: var(--primary); color: var(--primary-text); }
+.primary-btn:hover { background-color: var(--primary-hover); }
+.secondary-btn { color: var(--secondary); border-color: var(--secondary); background: rgba(var(--secondary-rgb), .10); box-shadow: 0 0 15px rgba(var(--secondary-rgb), .24), inset 0 0 10px rgba(var(--secondary-rgb), .1); }
+.secondary-btn:hover { background-color: rgba(var(--secondary-rgb), .17); box-shadow: 0 0 24px rgba(var(--secondary-rgb), .32), inset 0 0 12px rgba(var(--secondary-rgb), .14); }
+.outline-btn { color: var(--muted-text); border-color: var(--glass-border); background: rgba(0, 0, 0, .08); }
+.outline-btn:hover { border-color: var(--tertiary); color: var(--tertiary); box-shadow: 0 0 16px color-mix(in srgb, var(--tertiary) 40%, transparent); }
+.neon-input, .theme-select { color: var(--text); background: var(--control-bg); border-color: var(--glass-border); }
+.neon-input:focus, .theme-select:focus { outline: 2px solid var(--secondary); outline-offset: 2px; }
+.settings-description, .settings-experimental small, .input-group small { color: var(--muted-text); }
+
+.theme-selector { display: grid; gap: 8px; }
+.theme-selector label { color: var(--text); font-weight: 700; }
+.theme-select { width: 100%; padding: 11px 12px; border-radius: 10px; font: inherit; }
+.theme-select option { color: #f7fbff; background: #142238; }

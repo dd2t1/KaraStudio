@@ -1,0 +1,4 @@
+.cast-screen{position:fixed;inset:0;background:#080b16;color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:5vh 6vw;box-sizing:border-box;overflow:hidden;font-family:Arial,sans-serif}
+.cast-current{font-size:clamp(32px,5.4vw,100px);font-weight:800;line-height:1.35;width:100%;white-space:pre-wrap;overflow-wrap:anywhere}
+.cast-next{font-size:clamp(22px,3vw,54px);line-height:1.4;margin-top:7vh;opacity:.5;width:100%;white-space:pre-wrap;overflow-wrap:anywhere}
+.cast-notice{font-size:clamp(18px,2.5vw,36px);color:#acbad4}

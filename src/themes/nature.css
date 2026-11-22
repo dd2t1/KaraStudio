@@ -1,0 +1,21 @@
+:root {
+  --bg-primary: #0f3425;
+  --bg-secondary: #2d5a3d;
+  --text-primary: #e6f9e6;
+  --text-accent: #a7c957;
+  --accent-blue: #3a86ff;
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><path d="M0,100 Q50,50 100,100 T200,100" stroke="%23a7c957" stroke-width="2" fill="none" opacity="0.3"/></svg>');
+  color: var(--text-primary);
+}
+
+.nature-btn {
+  background: var(--text-accent);
+  color: var(--bg-primary);
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

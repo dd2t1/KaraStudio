@@ -1,0 +1,34 @@
+play_project:
+  name: Lire un morceau karaoké
+  description: Lance un morceau enregistré avec son et paroles sur un écran Google Cast, ou seulement l’audio sur un autre lecteur.
+  fields:
+    entity_id:
+      name: Lecteur
+      required: true
+      selector:
+        entity:
+          domain: media_player
+    project_id:
+      name: Identifiant du morceau
+      required: true
+      selector:
+        text:
+cast_page:
+  name: Afficher le karaoké
+  description: Ouvre la page web sur un Chromecast ou Google TV via DashCast. L’URL doit être accessible depuis l’écran. Ce lancement ne recopie pas la session du navigateur PC.
+  fields:
+    entity_id:
+      name: Écran
+      description: Chromecast ou Google TV sur lequel ouvrir la page.
+      required: true
+      selector:
+        entity:
+          filter:
+            - integration: cast
+              domain: media_player
+    url:
+      name: URL du karaoké
+      description: Adresse réseau de l’application. Facultative si app_url est configurée dans karaoke_storage. Utiliser l’URL du Docker une fois déployé.
+      example: http://192.168.0.5:3000/
+      selector:
+        text:

@@ -1,0 +1,45 @@
+﻿# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dépendances & builds
+node_modules/
+dist/
+dist-ssr/
+
+# Variables d'environnement & secrets (JAMAIS commiter .env)
+.env
+*.local
+
+# Environnements virtuels Python & caches
+.venv/
+.venv-local/
+__pycache__/
+*.pyc
+
+# Caches applicatifs et IA
+.ai-cache/
+.codegraph/
+.tools/
+.tmp*
+.playwright*
+backups/
+
+# Médias lourds ou sous droits d'auteur
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.lnk
+
+# Fichiers éditeurs & OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,21 @@
+{
+  "domain": "karaoke_storage",
+  "name": "Karaoke Storage",
+  "version": "1.7.1",
+  "config_flow": true,
+  "single_config_entry": true,
+  "documentation": "https://developers.home-assistant.io/docs/core/platform/media_source/",
+  "dependencies": [
+    "http",
+    "media_source",
+    "frontend",
+    "panel_custom",
+    "zeroconf"
+  ],
+  "after_dependencies": [
+    "cast",
+    "spotify"
+  ],
+  "codeowners": [],
+  "iot_class": "local_push"
+}
